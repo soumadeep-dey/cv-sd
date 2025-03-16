@@ -1,14 +1,8 @@
 %
-%Academic CV LaTeX Template
-% Author: Dubasi Pavan Kumar
-% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
-% License: MIT
+% Academic CV LaTeX Template
+% Author: Soumadeep Dey
+% LinkedIn: https://linkedin.com/in/soumadeep-dey
 %
-% For errors, suggestions, or improvements, please contact:
-% Email: pavankumard.pg19.ma@nitp.ac.in
-%
-
-
 
 \documentclass[a4paper,10pt]{article}
 
@@ -119,7 +113,13 @@
     \vspace{-1.7mm}
 }
 
-
+\newcommand{\resumeExtra}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{@{} p{0.79\textwidth} @{} p{0.19\textwidth} @{}}
+        \textbf{#1:}\hspace{1mm}\small{#2} & \hfill \textit{\small{#3}} \\
+    \end{tabular*}
+    \vspace{-1.7mm}
+}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -191,15 +191,15 @@
 \vspace{0.8mm}
  \resumeHeadingSkillStart
   \resumeSubItem{Programming Languages:}
-    {JavaScript, TypeScript, Python, Java, C++}
+    {JavaScript, Python, Java, C++}
   \resumeSubItem{Frontend:}
     {HTML/CSS, React, React Router, Redux, TanStack, Tailwind CSS, Material UI, Bootstrap}
-   \resumeSubItem{Backend:}
-    {Node.js, Express.js, RESTful APIs, JWT, Bcrypt, OAuth, Passport.js, Mongoose}
+  \resumeSubItem{Backend:}
+   {Node.js, Express.js, RESTful APIs, Mongoose, JWT, Bcrypt, OAuth, Passport.js, Multer}
   \resumeSubItem{Database:}
     {MongoDB, MySQL}
   \resumeSubItem{Tools \& Testing:}
-    {Git, GitHub, Jest, Postman, VS Code}
+    {Git, GitHub, Postman, VS Code, Jest}
   \resumeSubItem{Platforms:}
     {Linux, Windows }
  \resumeHeadingSkillEnd
@@ -214,9 +214,9 @@
       {\textbf{Andreal}}{July 2024 - Till date}
     \resumeItemListStart
 \item Engineered \textbf{dynamic web applications} using the \textbf{MERN stack}, optimizing \textbf{code structure}, \textbf{lazy loading}, and \textbf{state management} to boost load speed by \textbf{90\%}, increasing \textbf{user engagement} and reducing \textbf{bounce rates}.  
-\item Developed \textbf{modular, reusable React components} with \textbf{React Query}, \textbf{Redux Toolkit}, and \textbf{Tailwind CSS}, streamlining front-end workflows and reducing \textbf{development time by 75\%}.  
+\item Developed \textbf{modular, reusable React components} with \textbf{React Query}, \textbf{Redux Toolkit}, and \textbf{Tailwind, MUI} and \textbf{custom CSS}, streamlining front-end workflows and reducing \textbf{development time by 75\%}.  
 \item Implemented \textbf{RESTful APIs} and integrated \textbf{third-party services} using \textbf{Node.js} and \textbf{Express.js}, improving \textbf{data flow efficiency} and reducing \textbf{API latency by 80\%}.  
-\item Deployed applications using \textbf{Vercel, Render, Plesk, and cPanel} and built \textbf{CI/CD pipelines} with \textbf{Git and GitHub}, reducing \textbf{manual efforts by 85\%} and accelerating \textbf{release cycles}.  
+\item Deployed applications using \textbf{Vercel, Render, Plesk, and cPanel} and built \textbf{CI/CD pipelines} with \textbf{Git and GitHub}, reducing \textbf{manual efforts by 85\%} and accelerating \textbf{release cycles} by \textbf{85\%}.  
 \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -232,10 +232,15 @@
   {\href{https://www.eepcindia.org/}{\textcolor{darkblue}{Live Link}}}
 
 \resumeItemListStart
-  \item \textbf{Completely redesigned} and \textbf{migrated} the website from \textbf{PHP to MERN}, improving the \textbf{speed index by 92.22\%} (from \textbf{9s to 0.7s}), leading to an \textbf{80\% enhancement} in \textbf{user experience}.
-  \item \textbf{Optimized data fetching} by leveraging \textbf{Axios} and \textbf{React Query}, reducing \textbf{API call frequency by 85\%} and improving \textbf{page load times by 95\%} through \textbf{caching and prefetching} strategies.
-  \item \textbf{Developed dynamic data table components} with advanced \textbf{searching, sorting, and pagination}, reducing \textbf{user task completion time by 70\%} and improving \textbf{data accessibility}.
-  \item Implemented \textbf{protected routing} with a \textbf{3-tier role-based authorization system}, utilizing \textbf{JWT for token-based authentication} and \textbf{HTTP-only secure cookies with expiration}, enhancing \textbf{security} and \textbf{dashboard usability by 80\%}.
+  \item \textbf{Completely redesigned} and \textbf{migrated} the website from \textbf{PHP to MERN}, improving the \textbf{speed index by 93.33\%} (from \textbf{9s to 0.6s}), leading to an \textbf{95\% enhancement} in \textbf{user experience}.
+  % \item \textbf{Optimized data fetching} by leveraging \textbf{Axios} and \textbf{React Query}, reducing \textbf{API call frequency by 85\%} and improving \textbf{page load times by 95\%} through \textbf{caching and prefetching} strategies.
+  
+ \item \textbf{Optimized performance} by leveraging \textbf{React Query} and \textbf{Axios} reducing \textbf{API call frequency by 85\%}. Implemented \textbf{caching, prefetching, virtualizing, pagination, code splitting and lazy loading}, improving \textbf{page load time by 97\%} and enhancing \textbf{user engagement}.
+
+  \item Implemented \textbf{protected routing} with a \textbf{3-tier role-based authorization system}, utilizing \textbf{JWT} for \textbf{token-based authentication} and \textbf{HTTP-only secure cookies with expiration}, enhancing \textbf{security} and \textbf{dashboard usability by 80\%}.
+  
+  \item Developed \textbf{dynamic data table components} with advanced \textbf{searching, sorting, and pagination}, reducing \textbf{user task completion time by 80\%}. \textbf{Enhanced form management} with \textbf{React Hook Form}, optimizing \textbf{state handling, validation, and error boundaries}. 
+
 \resumeItemListEnd
 
 \resumeProject
@@ -245,13 +250,12 @@
    \href{https://github.com/soumadeep-dey/Video-Streaming-App.git}{\textcolor{darkblue}{GitHub}}}
 
 \resumeItemListStart
-  \item Built a \textbf{responsive} video streaming app using \textbf{React.js} and \textbf{Material-UI}, optimizing \textbf{UI/UX} and performance. Integrated \textbf{Rapid API's YouTube v3 API} with \textbf{Axios}, leveraging \textbf{debouncing} and \textbf{caching} to cut \textbf{API calls by 75\%}.  
-  \item Utilized \textbf{React Hooks} for state management, \textbf{React Router} for optimized navigation, and \textbf{React Player} for seamless playback. Implemented \textbf{category-based filtering}, \textbf{search functionality}, and personalized recommendations to improve content discovery.  
+  \item Developed a \textbf{responsive} video streaming app with \textbf{React.js} and \textbf{Material-UI}, enhancing \textbf{UI/UX} and performance. Integrated \textbf{YouTube v3 API} via \textbf{Axios} for seamless data fetching.
+  Utilized \textbf{React Hooks} for state management, \textbf{React Router} for optimized navigation, and \textbf{React Player} for seamless playback. Implemented \textbf{category-based filtering}, \textbf{search functionality}, and personalized recommendations to improve content discovery.  
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 \vspace{-7mm}
-
 
 \section{\textbf{Education}}
 \vspace{-0.4mm}
@@ -267,43 +271,54 @@
 \resumeSubHeadingListEnd
 \vspace{-6mm}
 
+% Certifications
 \section{\textbf{Certifications}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
-\resumePOR{}{\href{https://drive.google.com/file/d/1npWGvRyBmizdpinGLPZ79HTB3TeF2pmU/view?usp=sharing}{
-\textbf{Industrial Training Program - MERN Stack Development} | Ejob India
-}}{Jan 2024 - May 2024}
-\resumePOR{}{\href{https://www.udemy.com/certificate/UC-8a6da1dc-511c-4806-94dc-6639a50eeeb6/}{
-\textbf{The Web Developer Bootcamp 2024} | Udemy
-}}{May 2024 - Jul 2024}
+
+\resumeExtra
+{\href{https://drive.google.com/file/d/1yrR4oSctkCbkzNzfKVTh1FsvOrJLbU8w/view?usp=sharing}{\textcolor{darkblue}{Industrial Training Program}}} 
+{MERN Stack Development from \textbf{Ejob India}} 
+{Jan 2024 - May 2024}
+
+\resumeExtra
+{\href{https://www.udemy.com/certificate/UC-8a6da1dc-511c-4806-94dc-6639a50eeeb6/}{\textcolor{darkblue}{The Web Developer Bootcamp 2024}}} 
+{from \textbf{Udemy}} 
+{May 2024 - Jul 2024}
+
 \resumeSubHeadingListEnd
-\vspace{-5mm}
+\vspace{-6mm}
 
 \section{\textbf{Awards \& Achievements}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 
-\resumePOR{}{\href{https://drive.google.com/file/d/1RV3mDqcAxCP9UBGgdIl1ASC1CaHMQn_h/view?usp=drive_link}{\textcolor{darkblue}{\textbf{Smart India Hackathon 2023}}}}{Sept 2023}
-\vspace{-0.4mm}
- \resumeItemListStart
-  \item Got selected in SIH and \textbf{Ranked 7th} among 74 teams in the Internal Hackathon.
-\resumeItemListEnd
-\vspace{-1.3mm}
+\resumeExtra
+{\href{https://drive.google.com/file/d/1ymnKkB6So1uL_YkKG3F8xCuquniUFzjb/view?usp=sharing}{\textcolor{darkblue}{MCA Academic Excellence}}}
+{Ranked \textbf{1st} in MCA \textbf{4th} (SGPA: \textbf{9.88}) \& \textbf{3rd} (SGPA: \textbf{9.08}) Semesters.} 
+% {Ranked \textbf{1st} in MCA \textbf{4th} Semester with \textbf{SGPA: 9.88} and in \textbf{3rd} Semester with \textbf{SGPA: 9.08}} 
+{Jul 2024 \& Dec 2023}
 
-\resumePOR{}{\href{https://drive.google.com/file/d/1nX89BTKqojJNigMjrbGkiMBmzHVIi6bL/view?usp=drive_link}{\textcolor{darkblue}{\textbf{Hacktonix}}}}{Apr 2023}
-\vspace{-0.4mm}
-\resumeItemListStart
-  \item Got selected among \textbf{Top 5} in the Inter-College Hackathon.
-\resumeItemListEnd
-\vspace{-1.3mm}
 
-\resumePOR{}{\href{https://drive.google.com/file/d/1ZfnJIoI62OBAp2AQiYJfS0Kf3srx46F-/view?usp=sharing}{\textcolor{darkblue}{\textbf{Intellectual Property Rights Exhibition}}}}{Jun 2023}
-\vspace{-0.4mm}
-\resumeItemListStart
-  \item Exhibited project NEMO in a \textbf{WBSCST}-organized event.
-\resumeItemListEnd
+\resumeExtra
+{\href{https://drive.google.com/file/d/1RV3mDqcAxCP9UBGgdIl1ASC1CaHMQn_h/view?usp=drive_link}{\textcolor{darkblue}{Smart India Hackathon 2023}}} 
+% {Got selected in SIH and \textbf{Ranked 7th} among 74 teams in the Internal Hackathon.} 
+{Selected in SIH, \textbf{Ranked 7th} among 74 teams in the Internal Hackathon.}
+{Sept 2023}
 
+\resumeExtra
+{\href{https://drive.google.com/file/d/1nX89BTKqojJNigMjrbGkiMBmzHVIi6bL/view?usp=drive_link}{\textcolor{darkblue}{Hacktonix}}} 
+{Got selected among \textbf{Top 5} in the Inter-College Hackathon.} 
+{Apr 2023}
+
+\resumeExtra
+{\href{https://drive.google.com/file/d/1ZfnJIoI62OBAp2AQiYJfS0Kf3srx46F-/view?usp=sharing}{\textcolor{darkblue}{Intellectual Property Rights Exhibition}}} 
+{Exhibited project NEMO in a \textbf{WBSCST}-organized event.} 
+{Jun 2023}
+
+ 
 \resumeSubHeadingListEnd
-\vspace{-7mm}
+\vspace{-6mm}
+
 
 \end{document}
